@@ -4,7 +4,20 @@ import { PieChartProps } from 'interfaces/home'
 
 const PieChart = ({ title, value, series, colors }: PieChartProps) => {
   return (
-    <Box>
+    <Box
+      id="chart"
+      flex={1}
+      display="flex"
+      bgcolor="#fcfcfc"
+      flexDirection="row"
+      justifyContent="space-beween"
+      alignItems="center"
+      py={2}
+      gap={2}
+      borderRadius="15px"
+      minHeight="110px"
+      width="fit-content" 
+    >
       <Stack direction="column">
         <Typography fontSize={14} color="#808191">{title}</Typography>
         <Typography fontSize={24} color="#11142d" fontWeight={700} mt={1}>{value}</Typography>
@@ -17,9 +30,10 @@ const PieChart = ({ title, value, series, colors }: PieChartProps) => {
         legend: { show: false },
         dataLabels: { enabled: false },
       }}
+      series={series}
+      type="donut"
+      width="120px"
       />
-
-
     </Box>
   )
 }
