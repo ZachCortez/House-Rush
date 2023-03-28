@@ -116,26 +116,26 @@ function App() {
           catchAll={<ErrorComponent />}
           resources={[
             {
-              name: "property",
-              list: MuiInferencer,
+              name: "properties",
+              list: AllProperties,
+              show: PropertyDetails,
+              create: CreateProperty,
+              edit: EditProperty,
               icon:<VillaOutlined/>,
+              // canDelete: true,
+            },
+            {
+              name: "agents",
+              list: Agents,
+              show: AgentProfile,
+              icon: <PeopleOutlined/>,
               // edit: MuiInferencer,
-              // show: MuiInferencer,
               // create: MuiInferencer,
               // canDelete: true,
             },
             {
-              name: "agent",
-              list: MuiInferencer,
-              icon:<PeopleOutlined/>,
-              // edit: MuiInferencer,
-              // show: MuiInferencer,
-              // create: MuiInferencer,
-              // canDelete: true,
-            },
-            {
-              name: "review",
-              list: MuiInferencer,
+              name: "reviews",
+              list: Home,
               icon:<StarOutlineRounded/>,
               // edit: MuiInferencer,
               // show: MuiInferencer,
@@ -143,8 +143,8 @@ function App() {
               // canDelete: true,
             },
             {
-              name: "message",
-              list: MuiInferencer,
+              name: "messages",
+              list: Home,
               icon:<ChatBubbleOutline/>,
               // edit: MuiInferencer,
               // show: MuiInferencer,
@@ -154,7 +154,7 @@ function App() {
             {
               name: "my-profile",
               options: { lable:"My Profile"},
-              list: MuiInferencer,
+              list: MyProfile,
               icon:<AccountCircleOutlined/>
               // edit: MuiInferencer,
               // show: MuiInferencer,
