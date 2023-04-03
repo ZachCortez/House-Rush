@@ -13,7 +13,7 @@ const home = () => {
     <Box>
       <Typography fontSize={25}
       fontWeight={700} color="#11142D">
-        Dashboard
+        HouseRush | Dashboard
       </Typography>
       <Box mt="20px" display="flex"
       flexWrap="wrap" gap={4}>

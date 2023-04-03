@@ -11,7 +11,7 @@ const CustomButton = ({ type, title, backgroundColor, color, fullWidth, icon, ha
       width: fullWidth ? '100%' : 'fit-content',
       minWidth:130,
       backgroundColor,
-      color,
+      color:"rgb(45 17 117)",
       fontSize:16,
       fontWeight:600,
       gap: '10px',
